@@ -1,0 +1,122 @@
+.catalog-sort {
+	padding: 70px 0 30px 150px;
+	display: flex;
+	background: #F8F8F8;
+	align-items: flex-end;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.catalog-sort__select-label {
+	text-transform: uppercase;
+	font-size: 13px;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-right: 60px;
+}
+.catalog-sort__select-label_last {
+	margin-right: 120px;
+}
+.catalog-sort__select {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 8px;
+	border: 1px solid #dcdcdc;
+	margin-top: 15px;
+}
+.catalog-sort__label-wrapper {
+	display: flex;
+}
+.catalog-sort__checkbox-label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 60px 10px 0;
+}
+.catalog-sort__checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.catalog-sort__checkbox-text {
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+}
+.catalog-sort__checkbox-text:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 50px;
+	        border-radius: 50px;
+	background: white;
+	border: 1px solid #dcdcdc;
+}
+.catalog-sort__checkbox:checked + .catalog-sort__checkbox-text:before {
+	background: #d41c1c;
+	border-color: #D41C1C;
+}
+
+@media(--md) {
+	.catalog-sort {
+		padding: 70px 0 30px 0;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+}
+
+@media(--sm) {
+	.catalog-sort {
+		padding: 70px 0 30px 0;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.catalog-sort__select-label,
+	.catalog-sort__select-label_last,
+	.catalog-sort__checkbox-label {
+		margin-right: 30px;
+	}
+}
+
+@media(--ph) {
+	.catalog-sort {
+		align-items: center;
+		padding: 70px 10px 30px 10px;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.catalog-sort__select-label {
+		margin-bottom: 20px;
+	}
+	.catalog-sort__select-label,
+	.catalog-sort__select-label_last,
+	.catalog-sort__checkbox-label {
+		margin-right: 40px;
+	}
+}
+
+@media(--xs) {
+	.catalog-sort {
+		justify-content: space-around;
+	}
+	.catalog-sort__select-label {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+@media(--ixs) {
+	.catalog-sort__select-label {
+		width: 47%;
+	}
+	.catalog-sort__select-label:first-of-type {
+		width: 97%;
+	}
+}

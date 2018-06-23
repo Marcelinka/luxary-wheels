@@ -1,0 +1,156 @@
+.fav-wrapper {
+	width: 1200px;
+	margin: 0 auto 100px;
+}
+.fav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 40px 0;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.fav:not(:last-of-type) {
+	border-bottom: 1px solid #e8e8e8;
+}
+.fav__image {
+	height: 150px;
+}
+.fav__column {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.fav__name {
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-right: 25px;
+	line-height: 30px;
+}
+.fav__value {
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+.fav__price {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: black;
+	color: white;
+	padding: 20px 30px;
+}
+.fav__number {
+	line-height: 30px;
+	font-weight: 800;
+	margin-right: 20px;
+}
+.fav__currency {
+	line-height: 30px;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.fav__button {
+	background: transparent;
+	cursor: pointer;
+}
+.fav__cross {
+	width: 20px;
+}
+.fav-button-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+@media(--md) {
+	.fav-wrapper {
+		width: 900px;
+	}
+}
+
+@media(--sm) {
+	.fav-wrapper {
+		width: 700px;
+	}
+	.fav__price {
+		display: none;
+	}
+}
+
+@media(--ph) {
+	.news-header_fav {
+		margin-bottom: 0;
+	}
+	.fav-wrapper {
+		width: 100%;
+	}
+	.fav {
+		display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+	}
+	.fav__column {
+		width: 300px;
+		margin-top: 10px;
+	}
+	.fav__name {
+		width: 70px;
+	}
+	.fav__button {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.fav__image {
+		float: left;
+		margin-right: 40px;
+	}
+}
+
+@media(--xs) {
+	.fav__image {
+		height: 100px;
+		margin-top: 25px;
+		margin-right: 20px;
+	}
+	.fav__column {
+		width: 210px;
+	}
+}
+
+@media(--ixs) {
+	.fav {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.fav__image {
+		margin-right: 0;
+	}
+	.fav__column {
+		width: 180px;
+	}
+	.fav__name {
+		margin-right: 0;
+	}
+	.fav__value {
+		font-size: 14px;
+	}
+}

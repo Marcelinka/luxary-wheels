@@ -1,0 +1,158 @@
+.description {
+	display: flex;
+	margin-bottom: 100px;
+	background: #F8F8F8;
+	padding-top: 150px;
+}
+.description-left {
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.description-left__logo {
+	padding-left: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 70px;
+}
+.description-left__logo-image {
+	width: 250px;
+}
+.description-left__logo-text {
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-right: 100px;
+}
+.description-left__text {
+	font-family: Whitney;
+	font-weight: lighter;
+	font-size: 15px;
+	padding-left: 150px;
+	margin-bottom: 25px;
+	line-height: 20px;
+}
+.description-left__text_black {
+	padding: 50px 0 50px 150px;
+	background: black;
+	color: white;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 30px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+}
+.description-right {
+	width: 45%;
+	padding-left: 100px;
+}
+.description-right__gallery {
+	width: 100%;
+}
+.description-right .owl-carousel {
+	width: 90%;
+}
+.description-right .owl-carousel .owl-dots {
+	margin-top: 21px !important;
+}
+.description-right .owl-carousel .owl-dot span {
+	width: 8px !important;
+	height: 8px !important;
+	margin: 5px 4px !important;
+}
+
+@media(--md) {
+	.description-left__logo-text {
+		margin-right: 0;
+		font-size: 13px;
+	}
+}
+
+@media(--sm) {
+	.description {
+		margin-bottom: 40px;
+		background: white;
+	}
+	.description-left__logo-image {
+		width: 180px;
+	}
+	.description-left__logo-text {
+		margin-right: 0;
+		font-size: 12px;
+	}
+	.description-left,
+	.description-right {
+		width: 50%;
+	}
+	.description-left__logo,
+	.description-left__text {
+		padding-left: 50px;
+		
+	}
+	.description-left__text_black {
+		padding-left: 50px;
+		letter-spacing: 0;
+		font-size: 15px;
+	}
+	.description-right {
+		padding-left: 75px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media(--ph) {
+	.description {
+		padding-top: 0;
+	}
+	.description-left__logo {
+		display: none;
+	}
+	.description {
+		flex-direction: column-reverse;
+		margin-bottom: 20px;
+	}
+	.description-left,
+	.description-right {
+		width: 100%;
+	}
+	.description-left__logo_phones {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+	.description-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.description-left__text,
+	.description-left__text_black {
+		padding: 0 50px;
+		text-align: center;
+	}
+	.description-right {
+		margin-bottom : 50px;
+		padding: 0 50px;
+	}
+	.description-left__text_black {
+		width: 100%;
+		padding: 50px 50px;
+	}
+	.description-right .owl-carousel {
+		width: 100%;
+	}
+}
+
+@media(--xs) {
+	.description-left__text {
+		padding: 0 10px;
+	}
+	.description-left__text_black {
+		font-size: 13px;
+		padding: 50px 10px;
+	}
+	.description-right {
+		padding: 0 10px;
+	}
+}

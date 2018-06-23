@@ -1,0 +1,114 @@
+.news-wrapper {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.news {
+	max-width: 33%;
+	padding: 30px;
+}
+.news-wrapper_page .news {
+	margin-bottom: 40px;
+}
+.news__image {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.news__title {
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+}
+.news__preview {
+	font-family: "Whitney";
+	font-weight: lighter;
+	font-size: 14px;
+	margin-bottom: 25px;
+	line-height: 20px;
+}
+.news__button {
+	background: transparent;
+	font-family: Muller;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 10px 0;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	transition: color .4s;
+}
+.news__button:hover {
+	color: var(--red);
+}
+.news__arrow {
+	width: 30px;
+	margin-left: 15px;
+}
+.news__arrow svg {
+	width: 100%;
+}
+.news__arrow path {
+	fill: black;
+	transition: fill .4s;
+}
+.news__button:hover .news__arrow path {
+	fill: var(--red);
+}
+
+@media(--md) {
+	.news-wrapper {
+		width: 900px;
+	}
+}
+
+@media(--sm) {
+	.news-wrapper {
+		width: 600px;
+	}
+	.news {
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+	.news:last-child {
+		max-width: 100%;
+	}
+	.news-wrapper_page .news:last-child {
+		max-width: 50%;
+	}
+}
+
+@media(--ph) {
+	.news {
+		border: 1px solid black;
+		max-width: 48%;
+	}
+	.news__preview {
+		margin-bottom: 0;
+	}
+	.news__button {
+		display: none;
+	}
+	.news-wrapper {
+		width: 100%;
+		margin-bottom: 0;
+		padding: 0 10px;
+		justify-content: space-between;
+	}
+	.news__more-button {
+		margin-bottom: 77px;
+	}
+}
+
+@media(--xs) {
+	.news,
+	.news:last-child,
+	.news-wrapper_page .news:last-child {
+		max-width: 100%;
+	}
+}

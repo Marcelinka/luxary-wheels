@@ -1,0 +1,40 @@
+.photogallery {
+	width: 1200px;
+	margin: auto;
+}
+.photogallery__text {
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	margin-left: 20px;
+}
+.photogallery__list {
+	list-style-type: none;
+	columns: 2;
+}
+.photogallery__image-wrapper {
+	padding: 20px;
+}
+.photogallery__image {
+	width: 100%;
+}
+
+@media(--md) {
+	.photogallery {
+		width: 900px;
+	}
+}
+
+@media(--sm) {
+	.photogallery {
+		width: 100%;
+		padding: 0 20px 0;
+	}
+}
+
+@media(--ph) {
+	.photogallery__list {
+		columns: 1;
+	}
+}

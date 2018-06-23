@@ -1,0 +1,8 @@
+:root {
+    --grey: #b1b1b1;
+    --green: #62b346;
+    --red: rgb(212,28,28);
+}
+
+@lost flexbox flex;
+@lost gutter 30px;

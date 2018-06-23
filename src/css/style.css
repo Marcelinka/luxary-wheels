@@ -1,0 +1,13 @@
+@import 'animate.css';
+@import 'common-custom-properties.css';
+@import 'common-custom-media-queries.css';
+@import 'common-normalize.css';
+@import 'common-header.css';
+@import 'common-footer.css';
+@import 'page-description.css';
+@import 'common-catalog.css';
+@import 'common-news.css';
+@import 'page-catalog-sort.css';
+@import 'page-photogallery.css';
+@import 'page-fav.css';
+@import 'common-modal.css';

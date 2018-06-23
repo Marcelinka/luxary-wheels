@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luxury wheels</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="js/OwlCarousel2-2.2.1/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="js/OwlCarousel2-2.2.1/owl.theme.default.min.css">
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+	<script src="js/bundle.js"></script>
+</head>
+<body>
+	<header class="header_catalog">
+		<div class="header-left">
+			<img class="header-left__background header-left__background_catalog" src="images/catalog-header-background.png">
+			<a href="#"><img class="header-left__logo" src="images/Logo/LW_logo_white.svg"></a>
+			<div class="header-left__info">
+				<div class="header-left__text">Эксклюзивный дистрибьютор оригинального литья</div>
+				<div class="header-left__text header-left__phones">
+					<a href="tel:+79149791761">+7 914 979-17-61</a>
+					<div>|</div>
+					<a href="tel:+74232991515">+7 (423) 299-15-15</a>
+					<div>|</div>
+					<a href="tel:+79046291515">+7 904 629-15-15</a>
+				</div>
+				<div class="header-left__text">ул. Снеговая, 64, к.10</div>
+				<button class="btn header-left__button">обратный звонок</button>
+			</div>
+		</div>
+		<div class="header-right">
+			<nav class="header-right__menu">
+				<a href="index.html" class="header-right__link">главная</a>
+				<a href="catalog.html" class="header-right__link">каталог</a>
+				<a href="news.html" class="header-right__link">акции</a>
+				<a href="contacts.html" class="header-right__link">контакты</a>
+				<a href="myfavs.html" class="header-right__link">моя подборка</a>
+			</nav>
+
+			<button class="header-right__nav-button hidden hidden_phones phone-menu-button"><img class="header-right__nav-icon" src="images/phones-menu.png"></button>
+			<div id="phone-menu" class="phone-menu phone-menu_hidden">
+				<div class="phone-menu-overlay"></div>
+				<div class="phone-menu-body">
+					<button class="phone-menu__close-btn" id="menu-close"><img class="phone-menu__cross" src="images/delete.png"></button>
+					<a href="#"><img class="header-left__logo phone-menu__logo" src="images/Logo/LW_logo_black.svg"></a>
+					<nav class="phone-menu__links">
+						<a href="index.html" class="phone-menu__link">главная</a>
+						<a href="catalog.html" class="phone-menu__link">каталог</a>
+						<a href="news.html" class="phone-menu__link">акции</a>
+						<a href="contacts.html" class="phone-menu__link">контакты</a>
+						<a href="myfavs.html" class="phone-menu__link">моя подборка</a>
+					</nav>
+				</div>
+			</div>
+			
+			<div class="phone-menu fixed-menu fixed-menu_hidden hidden hidden_phones" id="fixed-menu">
+				<div class="phone-menu-overlay fixed-menu__overlay"></div>
+				<div class="phone-menu-body fixed-menu__body">
+					<a class="fixed-menu__href" href="#"><img class="header-left__logo phone-menu__logo fixed-menu__logo" src="images/Logo/LW_logo_black.svg"></a>
+					<button class="header-right__nav-button fixed-menu__button phone-menu-button"><img class="header-right__nav-icon" src="images/phones-menu-black.png"></button>
+				</div>
+			</div>
+			
+			<img class="header-right__logo hidden hidden_phones" src="images/Logo/LW_logo_white.svg">
+			<div class="owl-carousel owl-theme">
+			    <div class="item header-right__gallery">
+			    	<img class="header-right__gallery-background" src="images/header-background-2.png">
+			    	<p class="header-right__gallery-hot">Горячие скидки этой зимой</p>
+			    	<p class="header-right__text">Только до 31 января скидка 20% на всё литьё</p>
+			    	<button class="header-right__gallery-button hidden hidden_phones"><span>подробнее</span> <img class="header-right__gallery-arrow" src="images/arrow-right.png"></button>
+			    </div>
+			    <div class="item header-right__gallery">
+					<img class="header-right__gallery-background" src="images/header-background-2.png">
+			    	<p class="header-right__gallery-hot">Горячие скидки этой зимой</p>
+			    	<p class="header-right__text">Только до 31 января скидка 20% на всё литьё</p>
+			    	<button class="header-right__gallery-button hidden hidden_phones"><span>подробнее</span> <img class="header-right__gallery-arrow" src="images/arrow-right.png"></button>
+			    </div>
+			    <div class="item header-right__gallery">
+					<img class="header-right__gallery-background" src="images/header-background-2.png">
+			    	<p class="header-right__gallery-hot">Горячие скидки этой зимой</p>
+			    	<p class="header-right__text">Только до 31 января скидка 20% на всё литьё</p>
+			    	<button class="header-right__gallery-button hidden hidden_phones"><span>подробнее</span> <img class="header-right__gallery-arrow" src="images/arrow-right.png"></button>
+			    </div>
+			    <div class="item header-right__gallery">
+					<img class="header-right__gallery-background" src="images/header-background-2.png">
+			    	<p class="header-right__gallery-hot">Горячие скидки этой зимой</p>
+			    	<p class="header-right__text">Только до 31 января скидка 20% на всё литьё</p>
+			    	<button class="header-right__gallery-button hidden hidden_phones"><span>подробнее</span> <img class="header-right__gallery-arrow" src="images/arrow-right.png"></button>
+			    </div>
+			</div>
+			<button class="header-right__button"><span>подробнее</span> <img class="header-right__arrow" src="images/arrow-right.png"></button>
+			<button class="btn header-left__button hidden hidden_phones">обратный звонок</button>
+		</div>
+	</header>
+
+	<form class="catalog-sort">
+		<label class="catalog-sort__select-label">
+			Категория
+			<select class="catalog-sort__select">
+				<option>Диски</option>
+				<option>Avant Garde</option>
+				<option>Диски</option>
+			</select>
+		</label>
+		<label class="catalog-sort__select-label">
+			Бренд
+			<select class="catalog-sort__select">
+				<option>Avant Garde</option>
+				<option>Avant Garde</option>
+				<option>Avant Garde</option>
+			</select>
+		</label>
+		<label class="catalog-sort__select-label catalog-sort__select-label_last">
+			Диаметр
+			<select class="catalog-sort__select">
+				<option>24''</option>
+				<option>24''</option>
+				<option>24''</option>
+			</select>
+		</label>
+		<div class="catalog-sort__label-wrapper">
+			<label class="catalog-sort__checkbox-label">
+				<input class="catalog-sort__checkbox" type="checkbox">
+				<div class="catalog-sort__checkbox-text">Новинки</div>
+			</label>
+			<label class="catalog-sort__checkbox-label">
+				<input class="catalog-sort__checkbox" type="checkbox">
+				<div class="catalog-sort__checkbox-text">Скидки</div>
+			</label>
+		</div>
+	</form>
+
+	<section class="catalog">
+		<section class="catalog-wrapper catalog-wrapper_page">
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">ms10</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-1.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">4 990</p>
+						<p class="catalog-item__value">22 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m540</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-2.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">5 990</p>
+						<p class="catalog-item__value">25 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m550</span>
+				</div>
+				<button class="catalog-item__new">Новинка</button>
+				<img class="catalog-item__image" src="images/catalog-item-3.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">6 500</p>
+						<p class="catalog-item__value">28 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m580</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-4.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">4 990</p>
+						<p class="catalog-item__value">22 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m590</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-5.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">5 990</p>
+						<p class="catalog-item__value">25 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m610</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-6.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">6 500</p>
+						<p class="catalog-item__value">28 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">ms10</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-1.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">4 990</p>
+						<p class="catalog-item__value">22 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m540</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-2.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">5 990</p>
+						<p class="catalog-item__value">25 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m550</span>
+				</div>
+				<button class="catalog-item__new">Новинка</button>
+				<img class="catalog-item__image" src="images/catalog-item-3.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">6 500</p>
+						<p class="catalog-item__value">28 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m580</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-4.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">4 990</p>
+						<p class="catalog-item__value">22 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m590</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-5.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">5 990</p>
+						<p class="catalog-item__value">25 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__title">
+					<span class="catalog-item__company">Avant Garde</span>
+					<span class="catalog-item__model">m610</span>
+				</div>
+				<img class="catalog-item__image" src="images/catalog-item-6.png">
+				<div class="catalog-item__price">
+					<div>
+						<p class="catalog-item__value">6 500</p>
+						<p class="catalog-item__value">28 000</p>
+					</div>
+					<div>
+						<p class="catalog-item__amount">рублей / штука</p>
+						<p class="catalog-item__amount">рублей / комплект</p>
+					</div>
+				</div>
+				<div class="catalog-item__wrapper-btns hidden">
+					<button class="btn catalog-item__button">Подробнее</button>
+					<button class="catalog-item__button-fav">В подборку</button>
+				</div>
+			</div>
+		</section>
+		<button class="btn catalog__button">Показать еще</button>
+	</section>
+
+	<div class="modal-wrapper hidden" id="modal">
+		<section class="modal">
+			<button class="modal__button" id="modal-close"><img class="modal__cross" src="images/delete.png"></button>
+			<div class="modal__image-wrapper">
+				<div class="owl-carousel owl-theme">
+					<img class="modal__image" src="images/catalog-item-1.png">
+					<img class="modal__image" src="images/catalog-item-1.png">
+					<img class="modal__image" src="images/catalog-item-1.png">
+				</div>
+			</div>
+			<div class="fav__column fav__column_modal">
+				<div class="fav__name fav__name_modal">
+					<p class="modal__category">Категория</p>
+					<p>Бренд</p>
+				</div>
+				<div class="fav__value">
+					<p class="modal__category">Диски</p>
+					<p>Avant Garde</p>
+				</div>
+			</div>
+			<div class="fav__column fav__column_modal">
+				<div class="fav__name fav__name_modal">
+					<p>Модель</p>
+					<p>Размер</p>
+				</div>
+				<div class="fav__value">
+					<p>M510</p>
+					<p>18'' 20'' 24''</p>
+				</div>
+			</div>
+			<div class="fav__price fav__price_modal">
+				<div class="fav__number fav__number_modal">
+					<p>4 990</p>
+					<p>22 000</p>
+				</div>
+				<div class="fav__currency">
+					<p>рублей / штука</p>
+					<p>рублей / комплект</p>
+				</div>
+			</div>
+			<button class="modal__add-button">Добавить в подборку</button>
+			<p class="modal__text">Связаться с персональным менеджером
+				для уточнения нюансов заказа</p>
+		</section>
+	</div>
+	<div class="overlay hidden" id="overlay"></div>
+
+	<footer>
+		<div class="footer-left">
+			<img class="footer-left__logo" src="images/Logo/LW_logo_white.svg">
+			<p class="footer-left__address">Наш магазин расположен по адресу:</p>
+			<p class="footer-left__text footer-left__text_address">ул. Снеговая, 64, к.10</p>
+			<p><a class="footer-left__text" href="tel:+79149791761">+7 914 979-17-61</a></p>
+			<p><a class="footer-left__text" href="tel:+74232991515">+7 (423) 299-15-15</a></p>
+			<p><a class="footer-left__text" href="tel:+79046291515">+7 904 629-15-15</a></p>
+			<button class="btn footer-left__button">Обратный звонок</button>
+			<div class="footer-left__links">
+				Присоединяйся: <br class="hidden hidden_phones">
+				<a href="#">
+					<div class="footer-left__social vk">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+						  <path d="M882.3 612.6s79.2 78.3 98.8 114.5c.5.8.8 1.4.9 1.7 8 13.4 9.9 23.9 6 31.6-6.6 12.8-29 19.2-36.6 19.7h-140c-9.8 0-30-2.5-54.7-19.6-18.9-13.2-37.6-34.9-55.8-56.1-27.1-31.5-50.6-58.8-74.4-58.8-3 0-6 .5-8.8 1.5-18 5.7-40.8 31.3-40.8 99.6 0 21.4-16.9 33.5-28.7 33.5h-64.1c-21.9 0-135.6-7.6-236.5-114C123.9 535.9 12.8 274.6 11.8 272.3c-6.9-16.9 7.6-26.1 23.3-26.1h141.4c19 0 25.1 11.5 29.4 21.8 5 11.8 23.5 59 53.9 112.1 49.2 86.3 79.4 121.5 103.6 121.5 4.6 0 8.9-1.1 12.9-3.4 31.6-17.3 25.7-130 24.2-153.3 0-4.5 0-50.3-16.2-72.5-11.6-15.9-31.3-22.1-43.2-24.3 3.2-4.6 9.9-11.7 18.6-15.8 21.6-10.8 60.7-12.3 99.4-12.3h21.5c42 .6 52.9 3.3 68.2 7.2 30.8 7.4 31.4 27.3 28.7 95.2-.8 19.4-1.6 41.3-1.6 67 0 5.5-.2 11.6-.2 17.8-.9 34.8-2.2 74.1 22.4 90.2 3.1 2 6.8 3 10.6 3 8.5 0 34.1 0 103.3-118.8 30.4-52.5 53.9-114.4 55.5-119 1.4-2.6 5.5-9.9 10.5-12.8 3.8-2.4 8.9-2.7 11.6-2.7H956c18.1 0 30.4 2.7 32.8 9.6 4 11.1-.8 45.1-76.7 147.8-12.8 17.1-24 31.9-33.9 44.8-68.8 90.1-68.8 94.7 4.1 163.3z"/>
+						</svg>
+					</div>
+				</a>
+				<a href="#">
+					<div class="footer-left__social fb">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="88.428 12.828 107.543 207.085">
+						  <path d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z" fill="#3c5a9a"/>
+						</svg>
+					</div>
+				</a>
+				<a href="#">
+					<div class="footer-left__social insta">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+						  <path d="M20 7c-.551 0-1-.449-1-1V4c0-.551.449-1 1-1h2c.551 0 1 .449 1 1v2c0 .551-.449 1-1 1h-2zM13 9.188c-.726 0-1.396.213-1.973.563.18-.056.367-.093.564-.093a1.933 1.933 0 1 1-1.933 1.934c0-.199.039-.386.094-.565A3.77 3.77 0 0 0 9.188 13a3.81 3.81 0 0 0 3.813 3.813A3.812 3.812 0 1 0 13 9.188z" fill="#030104"/>
+						  <path d="M13 7a6 6 0 1 1 0 12 6 6 0 0 1 0-12m0-2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z" fill="#030104"/>
+						  <path d="M21.125 0H4.875A4.874 4.874 0 0 0 0 4.875v16.25A4.874 4.874 0 0 0 4.875 26h16.25A4.874 4.874 0 0 0 26 21.125V4.875A4.874 4.874 0 0 0 21.125 0zM24 9h-6.537A5.97 5.97 0 0 1 19 13a6 6 0 0 1-12 0c0-1.539.584-2.938 1.537-4H2V4.875A2.879 2.879 0 0 1 4.875 2h16.25A2.878 2.878 0 0 1 24 4.875V9z" fill="#030104"/>
+						</svg>
+					</div>
+				</a>
+				<a href="#">
+					<div class="footer-left__social tg">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+						  <path d="M5.299 144.645l69.126 25.8 26.756 86.047c1.712 5.511 8.451 7.548 12.924 3.891l38.532-31.412a11.496 11.496 0 0 1 14.013-.391l69.498 50.457c4.785 3.478 11.564.856 12.764-4.926L299.823 29.22c1.31-6.316-4.896-11.585-10.91-9.259L5.218 129.402c-7.001 2.7-6.94 12.612.081 15.243zm91.57 12.066l135.098-83.207c2.428-1.491 4.926 1.792 2.841 3.726L123.313 180.87a23.112 23.112 0 0 0-7.163 13.829l-3.798 28.146c-.503 3.758-5.782 4.131-6.819.494l-14.607-51.325c-1.673-5.854.765-12.107 5.943-15.303z"/>
+						</svg>
+					</div>
+				</a>
+				<a href="#">
+					<div class="footer-left__social you">
+						<svg id="Layer_1" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg">
+						  <path d="M59.6 11.8H16.4C7.9 11.8 1 18.7 1 27.2v21.6c0 8.5 6.9 15.4 15.4 15.4h43.3c8.5 0 15.4-6.9 15.4-15.4V27.2c-.1-8.5-7-15.4-15.5-15.4zM49.2 39.1L29 48.7c-.5.3-1.2-.1-1.2-.7V28.1c0-.6.6-1 1.2-.7l20.2 10.3c.7.2.6 1.1 0 1.4z" fill="#2a445d"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="footer-right">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.418581164122!2d131.97675841491017!3d43.13773879362735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb393a0d3ac9745%3A0xc191f8001bba19d4!2z0KHQvdC10LPQvtCy0LDRjyDRg9C70LjRhtCwLCA2NNC6MTAsINCS0LvQsNC00LjQstC-0YHRgtC-0LosINCf0YDQuNC80L7RgNGB0LrQuNC5INC60YDQsNC5LCA2OTAwNzQ!5e0!3m2!1sru!2sru!4v1517978006818" width="100%" height="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="footer-right__copyright">А есть А - разработка сайтов. 2018</div>
+		</div>
+	</footer>
+</body>
+</html>

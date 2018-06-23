@@ -1,0 +1,130 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	z-index: 2;
+}
+.modal {
+	position: fixed;
+	top: calc(50% - 334px/2 - 50px);
+	left: calc(50% - 560px/2 - 50px);
+	z-index: 3;
+	background: white;
+	padding: 50px;
+}
+.modal__button {
+	background: transparent;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.modal__cross {
+	width: 20px;
+}
+.modal__image-wrapper {
+	width: 340px;
+	height: 330px;
+	float: left;
+	padding-right: 40px;
+}
+.modal__image-wrapper .owl-carousel {
+	width: 100%;
+	max-height: 300px;
+}
+.modal__image-wrapper .owl-carousel .owl-dots {
+	margin-top: 21px !important;
+}
+.modal__image-wrapper .owl-carousel .owl-dot span {
+	width: 8px !important;
+	height: 8px !important;
+	margin: 5px 4px !important;
+}
+
+.fav__name_modal {
+	width: 80px;
+}
+.fav__price_modal {
+	padding: 0;
+	background: transparent;
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.fav__number_modal {
+	width: 80px;
+}
+.modal__add-button {
+	font-family: Muller;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: white;
+	background: #d41c1c;
+	padding: 15px 25px;
+	cursor: pointer;
+}
+.modal__text {
+	font-family: Whitney;
+	font-size: 10px;
+	margin-top: 30px;
+}
+
+@media(--sm) {
+	.fav__price_modal {
+		display: flex;
+	}
+}
+
+@media(--ph) {
+	.modal {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		padding: 28px;
+	}
+	.modal__category {
+		display: none;
+	}
+	.modal__image-wrapper {
+		width: 230px;
+		height: auto;
+		padding: 0;
+	}
+	.modal__image-wrapper .owl-carousel {
+		width: 100%;
+	}
+	.fav__column_modal {
+		width: 230px;
+		margin: 0;
+	}
+	.fav__price_modal {
+		width: 230px;
+		margin: 0;
+	}
+	.modal__text {
+		display: none;
+	}
+	.modal__add-button {
+		width: 230px;
+		margin-top: 10px;
+	}
+}
+
+@media(--ixs) {
+	.modal__image-wrapper .owl-carousel {
+		width: 220px;
+	}
+	.fav__number_modal {
+		margin-right: 0;
+	}
+}
